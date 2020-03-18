@@ -1,11 +1,18 @@
 #grid-container {
+    /* border-color: black;
+    border-style: solid;
+    border-width: 0.1cm; */
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: repeat(16, 1fr);
     width: 960px;
+    height: 460px;
+    margin: auto;
+    background-color: #79bbff;
 }
 
 .grid-item {
-    border-style: outset;
+    border-style: solid;
+    border-width: 0.1mm;
     text-align: center;
     padding: 10px 10px 10px 10px;
 }
@@ -14,10 +21,70 @@
     background-color: aquamarine;
 }
 
-#clearButton {
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 50px 50px 50px 50px;
-    font-size: 2em;
+#buttons {
+    /* border-color: black;
+    border-style: solid;
+    border-width: 0.1cm; */
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button {
+    box-shadow: 3px -8px 0px 0px #1564ad;
+    background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    background-color: #79bbff;
+    border-radius: 9px;
+    border: 2px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 12px 44px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+    background-color: #378de5;
+}
+
+html {
+    background-color: #e4e4e4;
+}
+
+h1 {
+    margin-top: 25px;
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 50px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: green;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: green;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
 }
